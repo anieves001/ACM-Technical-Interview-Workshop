@@ -21,12 +21,11 @@ int main(int argc, char* argv[]){
   cout<<"Enter a target number: ";
   cin>>t;
 /////////://////My Solution///////////////////
+//Add all possible combinations and print if target has been reached.
   cout<<"Output: [";
   for(int i=0;i<argc-1;i++){
     for(int j=i+1;j<argc-1;j++){
       for(int k=j+1;k<argc-1;k++){
-        //cout<<arr[i]<<" "<<arr[j]<<" "<<arr[k];
-        //cout<<"\n";
         if(((arr[i]+arr[j])+arr[k])==t){
           cout<<"("<<arr[i]<<","<<arr[j]<<","<<arr[k]<<")";
         }
